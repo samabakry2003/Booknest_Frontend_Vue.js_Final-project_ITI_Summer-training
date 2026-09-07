@@ -1,0 +1,305 @@
+/* =========================================
+   PUBLIC LAYOUT
+========================================= */
+
+.public-layout {
+  min-height: 100vh;
+  background: var(--color-cream);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(248, 245, 239, 0.92);
+
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(23, 32, 51, 0.07);
+}
+
+.navbar {
+  min-height: 82px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+
+  color: var(--color-primary) !important;
+}
+
+.brand-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: var(--color-primary);
+  color: var(--color-accent);
+
+  font-size: 1.2rem;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-size: 1.15rem;
+  font-weight: 850;
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+.brand-subtitle {
+  margin-top: 4px;
+
+  color: var(--color-muted);
+
+  font-size: 0.58rem;
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+/* Navigation */
+
+.navbar-nav {
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 0.65rem 0.9rem !important;
+
+  color: var(--color-muted) !important;
+
+  font-size: 0.9rem;
+  font-weight: 650;
+
+  border-radius: 10px;
+
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-primary) !important;
+
+  background: rgba(23, 32, 51, 0.05);
+}
+
+.nav-link.router-link-exact-active {
+  color: var(--color-primary) !important;
+
+  background: white;
+
+  box-shadow:
+    0 4px 15px rgba(23, 32, 51, 0.06);
+}
+
+
+/* Dashboard Button */
+
+.dashboard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  border-radius: 999px;
+
+  background: var(--color-primary);
+  color: white;
+
+  font-size: 0.82rem;
+  font-weight: 750;
+
+  transition: all 0.25s ease;
+}
+
+.dashboard-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+
+  transform: translateY(-2px);
+}
+
+.dashboard-btn i {
+  font-size: 0.8rem;
+}
+
+
+/* Mobile Toggle */
+
+.navbar-toggler {
+  border: none;
+
+  padding: 8px 10px;
+
+  color: var(--color-primary);
+
+  box-shadow: none !important;
+}
+
+
+/* Main */
+
+.main-content {
+  min-height: 70vh;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+  padding-top: 75px;
+
+  background: var(--color-primary);
+
+  color: white;
+}
+
+.footer-brand {
+  color: white !important;
+}
+
+.footer-brand .brand-subtitle {
+  color: #9ca5b5;
+}
+
+.footer-description {
+  max-width: 430px;
+
+  margin-top: 22px;
+
+  color: #aeb6c4;
+
+  line-height: 1.8;
+
+  font-size: 0.9rem;
+}
+
+.site-footer h6 {
+  margin-bottom: 20px;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.site-footer a {
+  display: block;
+
+  width: fit-content;
+
+  margin-bottom: 12px;
+
+  color: #aeb6c4;
+
+  font-size: 0.85rem;
+
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+}
+
+.social-links {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+
+  font-size: 0.9rem;
+}
+
+.social-links a:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+
+  border-color: var(--color-accent);
+}
+
+.footer-bottom {
+  margin-top: 60px;
+
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: #7f8999;
+
+  font-size: 0.75rem;
+}
+
+.footer-bottom i {
+  color: var(--color-accent);
+  margin-left: 4px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    padding: 20px 0;
+  }
+
+  .navbar-nav {
+    gap: 2px;
+  }
+
+  .dashboard-btn {
+    margin-top: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+}

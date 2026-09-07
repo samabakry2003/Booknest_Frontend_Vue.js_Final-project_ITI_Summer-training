@@ -1,0 +1,59 @@
+{
+  "authors": [
+    {
+      "id": "1",
+      "name": "Brandon Sanderson",
+      "bio": "American fantasy author known for imaginative worlds and complex magic systems.",
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Agatha Christie",
+      "bio": "English writer famous for detective novels featuring Hercule Poirot and Miss Marple.",
+      "avatarUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=300&q=80",
+      "createdAt": "2025-01-02T10:00:00Z",
+      "updatedAt": "2025-01-02T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Andy Weir",
+      "bio": "American novelist known for science fiction stories including Project Hail Mary.",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+      "createdAt": "2025-01-03T10:00:00Z",
+      "updatedAt": "2025-01-03T10:00:00Z"
+    }
+  ],
+  "books": [
+    {
+      "id": "3",
+      "title": "Project Hail Mary",
+      "authorId": "3",
+      "year": 2021,
+      "tags": [
+        "sci-fi",
+        "space"
+      ],
+      "coverUrl": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80",
+      "description": "A science fiction adventure about a lone astronaut who wakes up far from Earth with a critical mission to save humanity.",
+      "createdAt": "2025-01-03T10:00:00Z",
+      "updatedAt": "2025-01-03T10:00:00Z"
+    },
+    {
+      "id": "Yk2QA1Ma7vo",
+      "title": "The Hobbit",
+      "authorId": "1",
+      "year": 1937,
+      "tags": [
+        "fantasy",
+        "adventure"
+      ],
+      "coverUrl": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=80",
+      "description": "A fantasy adventure story about Bilbo Baggins and an unexpected journey.",
+      "createdAt": "2026-08-27T20:18:11.450Z",
+      "updatedAt": "2026-08-27T20:18:11.451Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
